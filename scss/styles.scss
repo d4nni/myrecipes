@@ -1,8 +1,43 @@
+//ná í stílsíðuna
+@import "layout";
+
+$bcolor: bisque;
+$font: 'Merriweather', serif;
+$fontcolor: rgb(3,116,150);
+
 body {
-    background-color: bisque;
+    background-color: $bcolor;
+    font-family: $font;
+}
+h1, h2, h3 {
+    color: $fontcolor;
 }
 .container {
     width: 80%;
     margin: auto;
     margin-top: 3em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.mybutton {
+    background-color: #f77;
+    font-size: 0.75em;
+    text-decoration: none;
+}
+.card {
+    background-color: white;
+    border-radius: .4em;
+    padding: 2em;
+}
+.button {
+    background-color: #f77;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: .4em;
+    padding: .3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: black;
 }

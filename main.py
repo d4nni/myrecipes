@@ -25,7 +25,7 @@ posts_metadata = [POSTS[post].metadata for post in POSTS]
 tags = [post['tags'] for post in posts_metadata]
 home_html = home_template.render(posts=posts_metadata, tags=tags)
 
-#ekki output heldur upp úr vinnumöppunni og í recipes möppuna
+# forsíðan
 with open('../mydemo/index.html', 'w') as file:
     file.write(home_html)
 
