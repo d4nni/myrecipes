@@ -1,8 +1,8 @@
 .container {
-    max-width: 80%;
+    max-width: 80em;
     margin: 0 auto;
 }
-
+// ipad//
 @media screen and (min-width: 37.5em) {
     .col-2 {
         display: grid;
@@ -15,8 +15,12 @@
         grid-gap: 2em;
     }
 }
-
+// fartölvur//
 @media screen and (min-width: 60em) {
+    .container {
+        max-width: 70em;
+        margin: 0 auto;
+    }
     .col-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -26,5 +30,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2em;
+        justify-content: center;
     }
 }

@@ -1,16 +1,13 @@
-{% extends "layout.html" %}
+{% extends "frontpage.html" %}
 
 {% block content %}
-
-<h1>My Recipes</h1>
 
 <div class="col-3">
 
 {% for post in posts %}
 
-    <div>
-
-        <article class="card">
+    <main class="card stretch">
+        <article>
             <header>
                 <img src="{{ post.thumbnail }}">
             </header>
@@ -24,13 +21,13 @@
                 <br>
                 {% set list_of_tags = post.tags.split(",") %}
                 {% for tag in list_of_tags %}
-                    <button class="shyButton mybutton">{{ tag }}</button>
+                    <button class="mybutton">{{ tag }}</button>
                 {% endfor %}
             </main>
             
         </article>
+    </main>
 
-    </div>
 
 
 {% endfor %}
